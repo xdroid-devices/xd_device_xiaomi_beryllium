@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := beryllium
 # Audio
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 
+# Build Broken
+BUILD_BROKEN_DUP_RULES := true
+
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
