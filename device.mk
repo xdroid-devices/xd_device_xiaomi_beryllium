@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
+$(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2246
@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sdm845
 
 # GPS
 PRODUCT_COPY_FILES += \
